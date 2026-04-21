@@ -2,26 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@layer base {
+  html {
+    font-family: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-pixel), monospace;
+    letter-spacing: 0;
+    line-height: 1.6;
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
-
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  .pixel-border {
+    border: 3px solid #172452;
+    box-shadow: 4px 4px 0px #172452;
+  }
+  .pixel-border-sm {
+    border: 2px solid #172452;
+    box-shadow: 2px 2px 0px #172452;
   }
 }
