@@ -22,9 +22,9 @@ export default function Navbar({ user }: NavbarProps) {
             <Image
               src="/logo-nav.png"
               alt="Mommy's Angels"
-              width={160}
+              width={72}
               height={44}
-              className="object-contain h-11 w-auto"
+              className="h-11 w-auto"
               priority
             />
           </Link>

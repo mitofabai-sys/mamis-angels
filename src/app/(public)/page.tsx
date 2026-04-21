@@ -50,16 +50,14 @@ export default function LandingPage() {
 
           {/* Angel mascot */}
           <div className="flex-shrink-0 flex justify-center lg:justify-start">
-            <div className="relative w-56 h-56 sm:w-72 sm:h-72">
-              <Image
-                src="/angel.png"
-                alt="Mommy's Angels mascot"
-                fill
-                className="object-contain object-bottom"
-                priority
-                sizes="288px"
-              />
-            </div>
+            <Image
+              src="/angel.png"
+              alt="Mommy's Angels mascot"
+              width={220}
+              height={242}
+              className="w-44 sm:w-56 h-auto"
+              priority
+            />
           </div>
 
           {/* Text */}
